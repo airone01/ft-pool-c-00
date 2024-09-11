@@ -36,7 +36,6 @@ void	ft_print_comb(void)
 			{
 				write (1, ", ", 2);
 			}
-
 			ft_putchar ('0' + a);
 			ft_putchar ('0' + b);
 			ft_putchar ('0' + c);

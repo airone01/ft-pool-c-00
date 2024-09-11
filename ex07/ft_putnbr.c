@@ -12,9 +12,8 @@
 
 #include <unistd.h>
 
-const int int_min = -2147483648;
-const int int_min_edited = 147483648;
-const int int_max = 2147483647;
+// const int int_min = -2147483648;
+// const int int_max = 2147483647;
 
 void	ft_putchar(char c)
 {
@@ -23,11 +22,11 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nbr)
 {
-	if (nbr == int_min)
+	if (nbr == -2147483648)
 	{
 		ft_putchar ('-');
 		ft_putchar ('2');
-		ft_putnbr (int_min_edited);
+		ft_putnbr (147483648);
 		return ;
 	}
 	if (nbr < 0)

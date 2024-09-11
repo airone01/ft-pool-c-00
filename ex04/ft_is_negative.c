@@ -12,19 +12,19 @@
 
 #include <unistd.h>
 
+void	ft_putchar(char c)
+{
+	write (1, &c, 1);
+}
+
 void	ft_is_negative(int n)
 {
-	char	ch_p;
-	char	ch_n;
-
-	ch_p = 'P';
-	ch_n = 'N';
 	if (n >= 0)
 	{
-		write (1, &ch_p, 1);
+		ft_putchar ('P');
 		return ;
 	}
-	write (1, &ch_n, 1);
+	ft_putchar ('N');
 }
 
 // int	main(void)
